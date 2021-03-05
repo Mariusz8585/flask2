@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Strona Glowna{% endblock %}
+
+{% block content %}
+<header>
+        <h1>Witaj na mojej stronie domowej</h1>
+    </header>
+	<img src="{{ url_for('static', filename='Screenshot_4.png') }}">
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+    {% block title %}Cześć{% endblock %}
+{% block content %}
+    <header>
+        <h1>Witaj na mojej stronie domowej</h1>
+    </header>
+	<img src="{{ url_for('static', filename='Screenshot_4.png') }}">
+        <h2><strong>Kontakt</strong> </h2>
+	<ul>
+			<li>email: hdshfh@rt.pk </li>
+			<li>telefon: 78787878 </li>
+
+	</ul>
+	<h4><strong>Wyślij wiadomość</strong></h4>
+
+	<form action="" method="POST">
+            <label>First Name</label>
+            <input name="firstname"/>
+            <input type="submit"/>
+        </form>
+
+{% endblock %}
